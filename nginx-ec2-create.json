@@ -110,6 +110,7 @@
                   "",
                   [
                     "#!/bin/bash -ex\n",
+                    "yum install -y git\n",
                     "git clone https://github.com/Rome84/nginx-reverse-proxy.git\n",
                     "cd nginx-reverse-proxy\n",
                     "sh run.sh\n"
