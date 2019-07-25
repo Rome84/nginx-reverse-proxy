@@ -117,7 +117,7 @@
                     "git clone https://github.com/Rome84/nginx-reverse-proxy.git\n",
                     "cd nginx-reverse-proxy\n",
                     "puppet module install puppet-nginx\n",
-                    "sed -i 's/localhost/`hostname`/g' nginx.pp\n"
+                    "sed -i 's/localhost/`hostname`/g' nginx.pp\n",
                     "puppet apply nginx.pp\n"
                   ]
                 ]
