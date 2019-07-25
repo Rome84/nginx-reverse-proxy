@@ -110,8 +110,13 @@
                   "",
                   [
                     "#!/bin/bash -ex\n",
-                    "yum update -y aws-cfn-bootstrap\n",
-                    "yum install -y aws-cli\n"
+                    "yum install -y wget git\n",
+                    "wget https://yum.puppet.com/puppet6-release-el-7.noarch.rpm\n",
+                    "yum install -y puppet6-release-el-7.noarch.rpm\n", 
+                    "yum install -y puppet\n",
+                    "git clone https://github.com/Rome84/nginx-reverse-proxy.git \n"
+                    "cd nginx-reverse-proxy \n"
+                    "puppet apply nginx.pp \n"
                   ]
                 ]
               }
